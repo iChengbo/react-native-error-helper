@@ -1,0 +1,26 @@
+{
+  "name": "react-native-error-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iChengbo/react-native-error-helper.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "author": "iChengbo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iChengbo/react-native-error-helper/issues"
+  },
+  "homepage": "https://github.com/iChengbo/react-native-error-helper#readme"
+}
