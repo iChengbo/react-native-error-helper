@@ -5,11 +5,11 @@ const noop = () => { };
  * @param {Function} customHandler 
  * @returns 
  */
-export const setPromiseOnUnhandled = (customHandler = noop) => {
+export const setPromiseUnCatchHandler = (customHandler = noop) => {
     const type = typeof customHandler;
     if (type !== 'function') {
-        console.log('setPromiseOnUnhandled should be callback function, but params is + ', type);
-        console.log('Not setting the Promise handler .. please fix setPromiseOnUnhandled call');
+        console.log('setPromiseUnCatchHandler should be callback function, but params is + ', type);
+        console.log('Not setting the Promise handler .. please fix setPromiseUnCatchHandler call');
         return;
     }
     require('promise/setimmediate/rejection-tracking').enable({

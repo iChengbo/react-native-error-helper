@@ -3,13 +3,13 @@ import {
     setGlobaErrorHandler,
 } from './globalError';
 
-import { setPromiseOnUnhandled } from './promiseTracke';
+import { setPromiseUnCatchHandler } from './promiseTracker';
 
 import { withErrorBoundary } from './errorBoundary/withErrorBoundary';
 
 export {
     setGlobaErrorHandler,
     getGlobaErrorHandler,
-    setPromiseOnUnhandled,
+    setPromiseUnCatchHandler,
     withErrorBoundary,
 };
