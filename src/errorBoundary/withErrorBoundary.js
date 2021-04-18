@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-04-17 22:34:13
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-04-18 01:17:01
+ * @LastEditTime: 2021-04-18 09:49:39
  * @FilePath: /react-native-error-helper/src/errorBoundary/withErrorBoundary.js
  */
 import React from 'react';
@@ -34,10 +34,10 @@ export const withErrorBoundary = (params) => (WrappedComponent) => {
                         error,
                     });
                 } else {
-                    return <Text>Something went wrong.</Text>;
+                    return React.createElement(Text, null, 'Something went wrong.');
                 }
             }
-            return <WrappedComponent />;
+            return React.createElement(WrappedComponent);
         }
     };
 };
