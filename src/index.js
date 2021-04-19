@@ -1,6 +1,6 @@
 import {
-    getGlobaErrorHandler,
-    setGlobaErrorHandler,
+    getGlobalErrorHandler,
+    setGlobalErrorHandler,
 } from './globalError';
 
 import { setPromiseUnCatchHandler } from './promiseTracker';
@@ -8,8 +8,8 @@ import { setPromiseUnCatchHandler } from './promiseTracker';
 import { withErrorBoundary } from './errorBoundary/withErrorBoundary';
 
 export {
-    setGlobaErrorHandler,
-    getGlobaErrorHandler,
+    setGlobalErrorHandler,
+    getGlobalErrorHandler,
     setPromiseUnCatchHandler,
     withErrorBoundary,
 };
