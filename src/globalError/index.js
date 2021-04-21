@@ -6,20 +6,10 @@ const noop = () => { };
  * @param {Boolean} allowedInDevMode 
  * @returns 
  */
-export const setGlobalErrorHandler = (
-    customHandler = noop,
-    allowedInDevMode = false,
-) => {
-    if (
-        typeof allowedInDevMode !== 'boolean' ||
-        typeof customHandler !== 'function'
-    ) {
-        console.log(
-            'setGlobalErrorHandler is called with wrong argument types.. first argument should be callback function and second argument is optional should be a boolean',
-        );
-        console.log(
-            'Not setting the JS handler .. please fix setGlobalErrorHandler call',
-        );
+export const setGlobalErrorHandler = (customHandler = noop, allowedInDevMode = false) => {
+    if (typeof allowedInDevMode !== 'boolean' || typeof customHandler !== 'function') {
+        console.log('setGlobalErrorHandler is called with wrong argument types.. first argument should be callback function and second argument is optional should be a boolean');
+        console.log('Not setting the JS handler .. please fix setGlobalErrorHandler call');
         return;
     }
     const allowed = allowedInDevMode ? true : !__DEV__;
