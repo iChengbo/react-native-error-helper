@@ -15,10 +15,12 @@ class ErrorBoundary extends React.Component {
     }
 
     componentDidCatch(error, errorInfo) {
+        const { onDidCatch } = this.props;
         onDidCatch && onDidCatch(error, errorInfo);
     }
 
     render() {
+        const { renderBoundary, children} = this.props;
         const { hasError, error } = this.state;
         if (hasError) {
             if (renderBoundary && typeof renderBoundary === 'function') {
@@ -29,7 +31,7 @@ class ErrorBoundary extends React.Component {
                 return React.createElement(Text, null, 'Something went wrong.');
             }
         }
-        return React.createElement(WrappedComponent, this.props);
+        return children;
     }
 };
 
