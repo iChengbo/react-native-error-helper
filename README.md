@@ -1,6 +1,20 @@
-# react-native-error-helper ![npm](https://img.shields.io/npm/dm/react-native-error-helper.svg)
+# react-native-error-helper
 
-[![https://nodei.co/npm/react-native-error-helper.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/react-native-error-helper.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-native-error-helper)
+![LICENSE](https://img.shields.io/badge/license-MIT-blue) ![npm-version](https://img.shields.io/npm/v/react-native-error-helper) ![npm](https://img.shields.io/npm/dm/react-native-error-helper.svg)
+
+
+<!-- [![https://nodei.co/npm/react-native-error-helper.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/react-native-error-helper.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-native-error-helper) -->
+
+
+## Table of Contents
+- [Install](#Install)
+- [Usage](#Usage)
+  - [setGlobalErrorHandler](#setGlobalErrorHandler)
+  - [setPromiseUnCatchHandler](#setPromiseUnCatchHandler)
+  - [ErrorBoundary](#ErrorBoundary)
+  - [withErrorBoundary](#withErrorBoundary)
+- [LICENSE](#LICENSE)
+
 
 ## Install
 
@@ -79,3 +93,7 @@ class BuggyCounter extends React.Component {
   }
 }
 ```
+
+## LICENSE
+
+MIT
