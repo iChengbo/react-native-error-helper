@@ -1,5 +1,8 @@
 # react-native-error-helper
 
+> A helper for React Native to catch global JS errors and provide some ways to resolve error boundaries.
+
+
 ![LICENSE](https://img.shields.io/badge/license-MIT-blue) ![npm-version](https://img.shields.io/npm/v/react-native-error-helper) ![npm](https://img.shields.io/npm/dm/react-native-error-helper.svg)
 
 
