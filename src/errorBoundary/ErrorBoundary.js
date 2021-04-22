@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 
-class ErrorBoundary extends React.Component {
+export class ErrorBoundary extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -34,5 +34,3 @@ class ErrorBoundary extends React.Component {
         return children;
     }
 };
-
-export default ErrorBoundary;
