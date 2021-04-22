@@ -1,10 +1,15 @@
+<!--
+ * @Author: iChengbo
+ * @Date: 2021-04-17 21:56:05
+ * @LastEditors: iChengbo
+ * @LastEditTime: 2021-04-22 17:12:18
+ * @FilePath: /react-native-error-helper/README.md
+-->
 # react-native-error-helper ![npm](https://img.shields.io/npm/dm/react-native-error-helper.svg)
 
 [![https://nodei.co/npm/react-native-error-helper.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/react-native-error-helper.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-native-error-helper)
 
 ## Install
-
-> npm i react-native-error-helper
 
 > yarn add react-native-error-helper
 
@@ -30,6 +35,18 @@ setPromiseUnCatchHandler((id, err) => {
 }, true);
 ```
 
+### ErrorBoundary
+
+```js
+import { ErrorBoundary } from 'react-native-error-helper';
+
+const App = () => (
+  <ErrorBoundary>
+    <BugComponent />
+  </ErrorBoundary>
+)
+```
+
 ### withErrorBoundary
 
 ```js
@@ -37,7 +54,7 @@ import { withErrorBoundary } from 'react-native-error-helper';
 
 @withErrorBoundary({
   renderBoundary: ({error}) => {
-    return <Text>自定义错误: {error.message}</Text>;
+    return <Text>catch error: {error.message}</Text>;
   },
 })
 class BuggyCounter extends React.Component {

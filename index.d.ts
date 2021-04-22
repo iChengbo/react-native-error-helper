@@ -5,4 +5,4 @@ declare const getGlobalErrorHandler: () => JSErrorHandler;
 
 declare const setGlobalErrorHandler: (handler: JSErrorHandler, allowInDevMode?: boolean) => void;
 
-declare const setPromiseUnCatchHandler: (handler: PromiseUnCatchHandler) => void;
+declare const setPromiseUnCatchHandler: (handler: PromiseUnCatchHandler, allowInDevMode?: boolean) => void;

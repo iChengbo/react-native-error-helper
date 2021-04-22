@@ -5,11 +5,13 @@ import {
 
 import { setPromiseUnCatchHandler } from './promiseTracker';
 
+import { ErrorBoundary } from './errorBoundary/ErrorBoundary';
 import { withErrorBoundary } from './errorBoundary/withErrorBoundary';
 
 export {
     setGlobalErrorHandler,
     getGlobalErrorHandler,
     setPromiseUnCatchHandler,
+    ErrorBoundary,
     withErrorBoundary,
 };
