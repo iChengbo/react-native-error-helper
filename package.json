@@ -1,6 +1,6 @@
 {
   "name": "react-native-error-helper",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A helper for React Native to catch global JS errors and provide some ways to resolve error boundaries",
   "main": "src/index.js",
   "typings": "index.d.ts",
