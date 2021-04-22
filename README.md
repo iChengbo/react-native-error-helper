@@ -1,13 +1,23 @@
-<!--
- * @Author: iChengbo
- * @Date: 2021-04-17 21:56:05
- * @LastEditors: iChengbo
- * @LastEditTime: 2021-04-22 17:12:18
- * @FilePath: /react-native-error-helper/README.md
--->
-# react-native-error-helper ![npm](https://img.shields.io/npm/dm/react-native-error-helper.svg)
+# react-native-error-helper
 
-[![https://nodei.co/npm/react-native-error-helper.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/react-native-error-helper.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-native-error-helper)
+> A helper for React Native to catch global JS errors and provide some ways to resolve error boundaries.
+
+
+![LICENSE](https://img.shields.io/badge/license-MIT-blue) ![npm-version](https://img.shields.io/npm/v/react-native-error-helper) ![npm](https://img.shields.io/npm/dm/react-native-error-helper.svg)
+
+
+<!-- [![https://nodei.co/npm/react-native-error-helper.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/react-native-error-helper.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-native-error-helper) -->
+
+
+## Table of Contents
+- [Install](#Install)
+- [Usage](#Usage)
+  - [setGlobalErrorHandler](#setGlobalErrorHandler)
+  - [setPromiseUnCatchHandler](#setPromiseUnCatchHandler)
+  - [ErrorBoundary](#ErrorBoundary)
+  - [withErrorBoundary](#withErrorBoundary)
+- [LICENSE](#LICENSE)
+
 
 ## Install
 
@@ -86,3 +96,7 @@ class BuggyCounter extends React.Component {
   }
 }
 ```
+
+## LICENSE
+
+MIT
