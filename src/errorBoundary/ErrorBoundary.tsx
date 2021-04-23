@@ -11,11 +11,11 @@ export interface ErrorBoundaryProps {
      * Render Component when the ErrorBoundary catches an error.
      * You can custom ErrorBoundary component.
      */
-    renderBoundary: (error: any) => React.ReactNode | JSX.Element
+    renderBoundary?: (error: any) => React.ReactNode | JSX.Element
     /**
      * Gets called when the ErrorBoundary catches an error.
      */
-    onDidCatch: NonNullable<ComponentDidCatch>
+    onDidCatch?: NonNullable<ComponentDidCatch>
     children?: React.ReactNode | JSX.Element
 }
 
