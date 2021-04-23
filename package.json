@@ -20,7 +20,8 @@
     "native",
     "error",
     "helper",
-    "boundary"
+    "boundary",
+    "hoc"
   ],
   "peerDependencies": {
     "react": "*",
