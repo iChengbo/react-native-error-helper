@@ -67,30 +67,28 @@ import { withErrorBoundary } from 'react-native-error-helper';
     return <Text>catch error: {error.message}</Text>;
   },
 })
-class BuggyCounter extends React.Component {
+class BugCounter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0 || this.props.init,
+      isError: false,
     };
   }
 
   render() {
-    const {count} = this.state;
-    if (count === 5) {
-      throw new Error('I error');
+    const {isError} = this.state;
+    if (isError) {
+      throw new Error('💥');
     } else {
       return (
-        <View>
-          <Text
-            onPress={() => {
-              this.setState({
-                count: count + 1,
-              });
-            }}>
-            {String(count)}
-          </Text>
-        </View>
+        <Text
+          onPress={() => {
+            this.setState({
+              isError: true
+            });
+          }}>
+          {String(isError)}
+        </Text>
       );
     }
   }
