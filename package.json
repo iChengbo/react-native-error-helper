@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "build": "yarn clean && yarn tsc",
-    "clean": "rm -rf dist/*"
+    "clean": "rm -rf dist/*",
+    "lint": "eslint src --ext .ts,.tsx"
   },
   "repository": {
     "type": "git",
@@ -34,8 +35,12 @@
   },
   "homepage": "https://github.com/iChengbo/react-native-error-helper#readme",
   "devDependencies": {
+    "@react-native-community/eslint-config": "^2.0.0",
     "@types/react": "^17.0.3",
     "@types/react-native": "^0.64.4",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
     "react": "^17.0.2",
     "react-native": "^0.64.0",
     "typescript": "^4.2.4"
