@@ -59,6 +59,8 @@ const App = () => (
 
 ### withErrorBoundary
 
+#### class component
+
 ```js
 import { withErrorBoundary } from 'react-native-error-helper';
 
@@ -93,6 +95,35 @@ class BugCounter extends React.Component {
     }
   }
 }
+```
+#### function component
+
+```js
+import { withErrorBoundary } from 'react-native-error-helper';
+
+const BugCounter = props => {
+  const [isError, setIsError] = useState();
+  if (isError) {
+    throw new Error('💥');
+  } else {
+    return (
+      <Text
+        onPress={() => {
+          this.setState({
+            isError: true
+          });
+        }}>
+        {String(isError)}
+      </Text>
+    )
+  }
+}
+
+const SafeCenter = withErrorBoundary({
+  renderBoundary: ({error}) => {
+    return <Text>catch error: {error.message}</Text>;
+  },
+})(BugCounter);
 ```
 
 ## LICENSE
