@@ -1,9 +1,9 @@
-import React from 'react';
-import { ErrorBoundary } from './ErrorBoundary';
+import React, { ComponentType } from 'react';
+import { ErrorBoundary, ErrorBoundaryProps } from './ErrorBoundary';
 
-export const withErrorBoundary = (params) => (WrappedComponent) => {
+export const withErrorBoundary = (params: ErrorBoundaryProps) => (WrappedComponent: ComponentType) => {
     const { renderBoundary, onDidCatch } = params;
-    return props => {
+    return (props: any) => {
         return (
             <ErrorBoundary renderBoundary={renderBoundary} onDidCatch={onDidCatch}>
                 <WrappedComponent {...props} />

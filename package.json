@@ -1,15 +1,15 @@
 {
   "name": "react-native-error-helper",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A helper for React Native to catch global JS errors and provide some ways to resolve error boundaries",
-  "main": "src/index.js",
-  "typings": "index.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "files": [
-    "src",
-    "index.d.ts"
+    "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "yarn clean && yarn tsc",
+    "clean": "rm -rf dist/*"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
     "hoc"
   ],
   "peerDependencies": {
-    "react": "*",
+    "react": ">= 16.8",
     "react-native": "*"
   },
   "author": "iChengbo",
@@ -32,5 +32,12 @@
   "bugs": {
     "url": "https://github.com/iChengbo/react-native-error-helper/issues"
   },
-  "homepage": "https://github.com/iChengbo/react-native-error-helper#readme"
+  "homepage": "https://github.com/iChengbo/react-native-error-helper#readme",
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-native": "^0.64.4",
+    "react": "^17.0.2",
+    "react-native": "^0.64.0",
+    "typescript": "^4.2.4"
+  }
 }
