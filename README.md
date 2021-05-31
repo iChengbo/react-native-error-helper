@@ -69,7 +69,7 @@ import { withErrorBoundary } from 'react-native-error-helper';
     return <Text>catch error: {error.message}</Text>;
   },
 })
-class BugCounter extends React.Component {
+class BugCenter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -101,7 +101,7 @@ class BugCounter extends React.Component {
 ```js
 import { withErrorBoundary } from 'react-native-error-helper';
 
-const BugCounter = props => {
+const BugCenter = props => {
   const [isError, setIsError] = useState();
   if (isError) {
     throw new Error('💥');
@@ -123,7 +123,7 @@ const SafeCenter = withErrorBoundary({
   renderBoundary: ({error}) => {
     return <Text>catch error: {error.message}</Text>;
   },
-})(BugCounter);
+})(BugCenter);
 ```
 
 ## LICENSE
