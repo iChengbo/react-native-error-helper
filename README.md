@@ -3,7 +3,9 @@
 > A helper for React Native to catch global JS errors and provide some ways to resolve error boundaries.
 
 
-![LICENSE](https://img.shields.io/badge/license-MIT-blue) ![npm-version](https://img.shields.io/npm/v/react-native-error-helper) ![npm](https://img.shields.io/npm/dm/react-native-error-helper.svg)
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
+[![npm-version](https://img.shields.io/npm/v/react-native-error-helper)](https://www.npmjs.com/package/react-native-error-helper)
+[![npm](https://img.shields.io/npm/dm/react-native-error-helper.svg)](https://www.npmjs.com/package/react-native-error-helper)
 
 
 <!-- [![https://nodei.co/npm/react-native-error-helper.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/react-native-error-helper.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-native-error-helper) -->
