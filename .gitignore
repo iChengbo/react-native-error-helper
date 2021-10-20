@@ -12,3 +12,5 @@ dist/
 
 # dependencies
 node_modules/
+
+yarn.lock
