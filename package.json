@@ -36,7 +36,7 @@
   "homepage": "https://github.com/iChengbo/react-native-error-helper#readme",
   "devDependencies": {
     "@react-native-community/eslint-config": "^3.0.1",
-    "@types/react": "^17.0.3",
+    "@types/react": "^18.0.18",
     "@types/react-native": "^0.64.4",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
